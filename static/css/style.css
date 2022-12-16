@@ -1,0 +1,68 @@
+body { 
+    height: 100%;
+    overflow: hidden;
+    background-color: #110303;
+ 
+}
+
+#form {
+    position: fixed;
+    left: 43%;
+    top: 350px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    
+    
+}
+
+#botao1 {
+    width: 10%;
+    position: fixed;
+    left: 810px;
+    margin-top: 10px;
+    box-shadow: 0 0 1em #000000;
+    background-color: #708066;
+    
+    
+}
+
+#quadrado {
+    position: fixed;
+    background: #ff194b;
+    width: 500px;
+    height: 500px;
+    left: 35%;
+    top: 20%;
+    border-radius: 5%;
+    box-shadow: 0 0 1em #ff194b;
+}
+
+
+#link_criar {
+    text-decoration: none;
+    position: fixed;
+    left: 850px;
+    top: 60%;
+    color: #000000;
+    font-family: monospace;
+
+}
+
+#form_2 {
+    position: fixed;
+    left: 43%;
+    top: 290px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+
+#link_login {
+    text-decoration: none;
+    position: fixed;
+    left: 880px;
+    top: 65%;
+    color: #000000;
+    font-family: monospace;
+
+}

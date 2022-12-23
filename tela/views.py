@@ -18,10 +18,16 @@ def tela_login(request): #LOGIN E AUTENTIFICAÇÃO
         username = request.POST['username']
         password = request.POST['senha']
 
-        user = banco_de_login.objects.filter(username=username).first()
+        user_web = banco_de_login.objects.filter(username=username).first()
+        pass_web = banco_de_login.objects.filter(senha=password).first()
 
-        if user:
-            return redirect ('usuario_logado')
+
+        if user_web:
+            if pass_web:
+                return render (request,"html/user_sucess.html", {'nick':username}) # retorna o nome para dar boas vindas!
+
+            else:
+                return redirect ('erro_')
             
         else:
             return redirect ('erro_')

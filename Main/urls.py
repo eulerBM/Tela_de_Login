@@ -21,4 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.tela_login, name='login_page'),
     path('cadastro/', views.tela_cadastro, name='tela_cadastro'),
+    path('user/', views.usuario_logado, name='usuario_logado'),
+    path('erro_register/', views.erro_register, name='erro_')
 ]

@@ -1,0 +1,22 @@
+body { 
+    height: 100%;
+    overflow: hidden;
+    background-color: #110303;
+ 
+}
+
+#erro_1 {
+    position: fixed;
+    color: whitesmoke;
+    left: 30%;
+}
+
+#erro_2 {
+    position: fixed;
+    color: red;
+    text-decoration: none;
+    left: 45%;
+    top: 50%;
+    font-size: large;
+    
+}

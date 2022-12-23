@@ -1,0 +1,13 @@
+body { 
+    height: 100%;
+    overflow: hidden;
+    background-color: #110303;
+ 
+}
+
+#erro_login {
+    position: fixed;
+    color: whitesmoke;
+    left: 30%;
+}
+

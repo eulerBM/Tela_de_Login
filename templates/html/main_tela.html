@@ -15,7 +15,8 @@
 
     <div id="quadrado"></div>
 
-    <form id="form" action="" method="get">
+    <form id="form" action="" method="post" name="form_web">
+
 
         {% csrf_token %}  
         <h6>Username</h6>
@@ -23,7 +24,7 @@
         <h6>Senha</h6>
         {{ login.senha }}
         <br>
-        <button id="botao1" class="btn btn-success" type="submit">Entrar</button>
+        <button id="botao1" class="btn btn-success" type="submit" method="post">Entrar</button>
 
     </form>
 

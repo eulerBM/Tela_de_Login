@@ -4,7 +4,7 @@ from tela.forms import form_cadastro
 from django.contrib.auth.models import User
 from django.contrib.auth import models,authenticate
 from .models import banco_de_login
-
+from django.contrib.auth.decorators import login_required
 
 def tela_login(request): #LOGIN E AUTENTIFICAÇÃO
     form = form_login()
@@ -51,8 +51,10 @@ def tela_cadastro(request): #CADASTRO DE USUARIO
                 form.save()
                 return redirect ('login_page')
 
+
 def usuario_logado(request): # tela de logado com sucesso
     return render (request, "html/user_sucess.html")
+
 
 def erro_register(request): #erro de usuario nao cadastrado
         return render (request, 'html/erro/user_cadas_no.html')
